@@ -1,0 +1,57 @@
+package com.ithaima.duman;
+
+
+
+import java.io.Serializable;
+
+/**
+ * **/
+
+public class user implements Serializable{
+    private int sno;
+    private String sname;
+    private int age;
+    private String score;
+
+    public int getSno() {
+        return sno;
+    }
+
+    public void setSno(int sno) {
+        this.sno = sno;
+    }
+
+    public String getSname() {
+        return sname;
+    }
+
+    public void setSname(String sname) {
+        this.sname = sname;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getScore() {
+        return score;
+    }
+
+    public void setScore(String score) {
+        this.score = score;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "sno=" + sno +
+                ", sname='" + sname + '\'' +
+                ", age=" + age +
+                ", score='" + score + '\'' +
+                '}';
+    }
+}
